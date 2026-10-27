@@ -12,9 +12,19 @@ class MyApp extends StatelessWidget {
   // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
+    final background = Colors.blueGrey[900];
     return MaterialApp(
+      title: 'BMI Calculator',
       debugShowCheckedModeBanner: false,
-    home: BMICalculator()
+      theme: ThemeData.dark().copyWith(
+        scaffoldBackgroundColor: background,
+        appBarTheme: AppBarTheme(
+          backgroundColor: background,
+          elevation: 0,
+          centerTitle: true,
+        ),
+      ),
+      home: const BMICalculator(),
     );
   }
 }

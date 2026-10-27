@@ -2,6 +2,16 @@
 
 BMI Calculator
 
+## Features
+
+- Pick gender, height (slider), age and weight (+/- buttons with sensible limits).
+- Result screen shows BMI to one decimal, its WHO category (Underweight,
+  Normal, Overweight, Obese) on a coloured scale, the healthy weight range
+  for your height, and short advice.
+- Shows a note for users under 18, where adult BMI categories are less accurate.
+
+Run the tests with `flutter test`.
+
 ## Getting Started
 
 This project is a starting point for a Flutter application.
